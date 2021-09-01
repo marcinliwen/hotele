@@ -4,6 +4,13 @@ module.exports = {
     title: "hotele",
   },
   plugins: [
+    {
+      resolve: "gatsby-plugin-netlify-functions",
+      options: {
+        functionsSrc: "./src/functions",
+        functionsOutput: "./functions",
+      },
+    },
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
