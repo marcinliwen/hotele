@@ -128,7 +128,7 @@ const links = [
 ]
 
 const fetchData = () => {
-  return fetch("/functions/hello")
+  return fetch("/.netlify/functions/hello")
         .then((response) => response.json())
         .then((data) => console.log(data));}
 
