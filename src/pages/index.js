@@ -129,7 +129,7 @@ const links = [
 
 const fetchData = () => {
   return fetch("/.netlify/functions/hello")
-        .then((response) => response.json())
+        .then((response) => response)
         .then((data) => console.log(data));}
 
 
